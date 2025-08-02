@@ -41,7 +41,6 @@ export default function GameLayout({ selectedNpc, onNpcClick }) {
                     {selectedNpc.characters}
                 </p>
                 <p><strong>지금 기분은?</strong>(0~5) <strong>{selectedNpc.happiness}</strong></p>
-
                 <footer className="chat-footer">
                     <textarea
                         className="chat-input"
@@ -50,7 +49,6 @@ export default function GameLayout({ selectedNpc, onNpcClick }) {
                         maxLength={100}
                         placeholder="메시지를 입력하세요..."
                     />
-                    {/* <button className="send-btn" onClick={handleSend}>전송</button> */}
                 </footer>
                 {selectedNpc.name != '성재' ?
                     <button onClick={handleSend}>성재에게</button> : <></>}
